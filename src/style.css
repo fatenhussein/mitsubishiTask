@@ -25,7 +25,7 @@ body {
   overflow-x: hidden;
 }
 
-/*nav styels */
+/*nav styles */
 
 nav {
   display: flex;
@@ -145,6 +145,7 @@ nav {
 .fa-magnifying-glass {
   font-weight: 400;
 }
+
 /*drop down list */
 .dropbtn {
   background-color: var(--primary-black);
@@ -228,7 +229,9 @@ nav {
 .show {
   transform: translateX(0);
 }
+/*nav styles */
 
+/*hero section */
 .hero {
   position: relative;
   background-image: url('../assets/Home_Page_1_1.png');
@@ -276,6 +279,8 @@ nav {
   color: var(--text-color);
   text-transform: uppercase;
 }
+
+/*hero section */
 
 /*about us section*/
 
@@ -375,6 +380,8 @@ nav {
   color: #717679;
 }
 
+/*about us section*/
+
 /*before-footer*/
 
 .before-footer {
@@ -428,6 +435,8 @@ nav {
   background-color: var(--primary-black);
   color: var(--text-color);
 }
+
+/*before-footer*/
 
 /*footer*/
 footer {
@@ -662,8 +671,6 @@ svg {
   left: -100%;
 }
 
-/**/
-
 span.next {
   position: absolute;
   top: 50%;
@@ -725,11 +732,14 @@ span.next {
   font-weight: bolder;
   font-size: 20px;
 }
+
+/*our-latest-update-sec*/
+
 /*card slider*/
 
 .cards-con.card-slider {
   overflow: hidden;
-  width: 1250px; /* Assuming each card is 450px wide including margins or padding, change as per your requirement */
+  width: 1250px;
 }
 
 .slider-inner {
@@ -740,7 +750,7 @@ span.next {
 .slide {
   display: flex;
   justify-content: space-between;
-  min-width: 1350px; /* Assuming each card is 450px wide, so three cards together will take up 1350px */
+  min-width: 1350px;
 }
 
 .card-con {
@@ -751,6 +761,7 @@ span.next {
   flex-direction: column;
   gap: 1rem;
   cursor: pointer;
+  z-index: 1;
 }
 
 .card-img img {
@@ -844,7 +855,7 @@ span.next {
   color: var(--text-color);
   font-size: 25px;
   cursor: pointer;
-
+  z-index: 2;
   opacity: 0;
 }
 
@@ -852,7 +863,10 @@ span.next {
   opacity: 1;
 }
 
+/*our-latest-update-sec*/
+
 /*responsive*/
+
 @media screen and (max-width: 1024px) {
   nav {
     display: flex;
@@ -955,7 +969,7 @@ span.next {
     width: 50px;
   }
 }
-
+/*mobile*/
 @media only screen and (max-width: 750px) {
   nav {
     display: flex;
@@ -1066,13 +1080,13 @@ span.next {
     top: 20%;
     transform: translate(0%);
   }
-  .hero-section-title{
+  .hero-section-title {
     font-size: 15px;
   }
-  .hero-desc{
+  .hero-desc {
     font-size: 9px;
   }
-  .our-latest-update-sec{
+  .our-latest-update-sec {
     margin-top: unset;
   }
 }
@@ -1133,11 +1147,10 @@ span.next {
     font-size: 14px;
   }
 
-
-   .hero-section-title{
+  .hero-section-title {
     font-size: 11px;
-   }
-  .hero-desc{
+  }
+  .hero-desc {
     font-size: 6.5px;
     left: 100px;
   }
